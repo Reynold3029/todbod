@@ -1,7 +1,7 @@
 import os
 from PIL import Image
 from time import sleep
-from userbot import bot, CMD_HELPER
+from userbot import bot, CMD_HELP
 from telethon import events
 from selenium import webdriver
 from urllib.parse import quote_plus
