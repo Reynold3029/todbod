@@ -19,7 +19,7 @@ RUN apk add --no-cache --update \
     build-base \
     python3 \
     chromium \
-    chromium-chromedriver \
+    chromium-chromedriver
 
 RUN python3 -m ensurepip \
     && pip3 install --upgrade pip setuptools \
