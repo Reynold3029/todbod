@@ -17,6 +17,8 @@ RUN apk add --no-cache --update \
     readline-dev \
     sqlite-dev \
     build-base \
+    chromium \
+    chromium-chromedriver \
     python3
 
 RUN python3 -m ensurepip \
@@ -54,7 +56,7 @@ RUN adduser userbot --disabled-password --home /home/userbot
 RUN adduser userbot wheel
 USER userbot
 RUN mkdir /home/userbot/userbot
-RUN git clone -b master https://github.com/RaphielGang/Telegram-UserBot /home/userbot/userbot
+RUN git clone -b master https://github.com/z4nyx/todbod /home/userbot/userbot
 WORKDIR /home/userbot/userbot
 #
 #Copies session and config(if it exists)
